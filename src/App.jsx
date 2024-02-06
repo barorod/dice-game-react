@@ -8,6 +8,7 @@ function App() {
 	return (
 		<>
 			<LuckyN />
+			<LuckyN numDice={3} goal={11} />
 			{/* <Dice dice={[3, 6, 1]} /> */}
 			{/* <Dice dice={[1, 2, 3]} color="red" /> */}
 		</>
