@@ -5,6 +5,7 @@
   border: none;
   color: white;
   transition: opacity 0.2s;
+  cursor: pointer;
 }
 
 .Button:hover {

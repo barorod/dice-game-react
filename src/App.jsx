@@ -1,16 +1,20 @@
 import './App.css';
-import Lucky7 from './Lucky7';
-import Die from './Die';
-import Dice from './Dice';
 import LuckyN from './LuckyN';
+import { sum } from './utils';
+
+function lessThan4(dice) {
+	return sum(dice) < 4;
+}
+
+function sameValue(dice) {
+	return dice.every((v) => v === dice[0]);
+}
 
 function App() {
 	return (
 		<>
-			<LuckyN />
-			<LuckyN numDice={3} goal={11} />
-			{/* <Dice dice={[3, 6, 1]} /> */}
-			{/* <Dice dice={[1, 2, 3]} color="red" /> */}
+			<LuckyN title="Roll less than 4" winCheck={lessThan4} />
+			<LuckyN title="Roll the same number" winCheck={sameValue} />
 		</>
 	);
 }
