@@ -1,4 +1,6 @@
 import './App.css';
+import BoxGrid from './BoxGrid';
+
 import LuckyN from './LuckyN';
 import { sum } from './utils';
 
@@ -13,8 +15,9 @@ function sameValue(dice) {
 function App() {
 	return (
 		<>
-			<LuckyN title="Roll less than 4" winCheck={lessThan4} />
-			<LuckyN title="Roll the same number" winCheck={sameValue} />
+			<BoxGrid />
+			{/* <LuckyN title="Roll less than 4" winCheck={lessThan4} />
+			<LuckyN title="Roll the same number" winCheck={sameValue} /> */}
 		</>
 	);
 }
